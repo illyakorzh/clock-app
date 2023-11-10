@@ -1,0 +1,27 @@
+.wrapper {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wrapperQuote {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.wrapperQuote cite {
+  font-weight: bold;
+}
+
+@media (max-width: 820px) {
+  .wrapper{
+    grid-template-columns:80% 20%;
+  }
+}
+

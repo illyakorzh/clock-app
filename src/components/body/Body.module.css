@@ -1,0 +1,110 @@
+.wrapper{
+  display: flex;
+    align-items: center;
+  gap: 20px;
+  width: 60%;
+  margin: 0 auto;
+}
+.leftSide{
+  display: flex;
+}
+.goodTime{
+  color: white;
+  font-size: 20px;
+  margin-left: 25px;
+}
+.sun{
+  animation-name: circle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.pm{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-self: flex-end;
+  gap: 20px;
+}
+.pm span {
+  font-size: 40px;
+  line-height: 33px;
+}
+.hour{
+  font-size: 200px;
+  color: white;
+  line-height: 150px;
+}
+.expand{
+  border-radius: 2.8rem;
+  height: fit-content;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  background: #fff;
+  font-weight: 700;
+  letter-spacing: 3.75px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+padding: 5px ;
+  margin-bottom: 20px;
+  align-self: flex-end;
+}
+@keyframes circle{
+
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+   transform: rotate(360deg);
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper{
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .expand{
+    align-self: start;
+  }
+  .hour{
+    font-size: 200px;
+    color: white;
+    line-height: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .hour{
+    font-size: 100px;
+    line-height: 75px;
+  }
+  .pm span {
+    font-size: 20px;
+    line-height: 16px;
+  }
+  .pm{
+    gap: 10px;
+  }
+  .goodTime{
+display: inline-block;
+width: 50%;
+  }
+.goodTimeAndSun{
+  display: flex;
+  align-items: center;
+}
+  .goodTimeAndSun img{
+    height: fit-content;
+  }
+}
+@media (max-width: 800px) {
+
+  .goodTime{
+    display: inline-block;
+    width: 70%;
+  }
+
+}
